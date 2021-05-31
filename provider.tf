@@ -5,6 +5,11 @@ terraform {
       version = "~> 3.0"
     }
   }
+  backend s3 {
+    bucket = "aparna-terraform-state"
+    key = "infra-setup/state"
+    region = "us-west-1"
+  }
 }
 
 provider "aws" {
