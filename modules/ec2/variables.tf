@@ -50,14 +50,7 @@ variable private_subnet_id {
     
 }
 
-variable vpc_cidr_block {
-  type        = string
-  description = "vpc cidr_block"
-  default     = "10.0.0.0/16"
-}
-
-variable environment_name {
-  type        = string
-  description = "the name of an environment"
-  default     = "acme"
+variable "vpc_id" {
+    type = string
+    description = "vpc id"
 }
