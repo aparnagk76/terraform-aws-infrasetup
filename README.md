@@ -1,4 +1,3 @@
-# terraform-aws-infrasetup
 ## Requirements
 
 | Name | Version |
@@ -26,5 +25,9 @@
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| nginx-lb | n/a |
+| nginx-private-1 | n/a |
+| nginx-private-2 | n/a |
 
