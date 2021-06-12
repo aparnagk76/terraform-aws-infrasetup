@@ -7,7 +7,7 @@ terraform {
   }
   backend s3 {
     bucket = "aparna-terraform-state"
-    key = "infra-setup/state"
+    key    = "infra-setup/state"
     region = "us-west-1"
   }
 }

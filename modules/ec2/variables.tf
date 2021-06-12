@@ -34,15 +34,17 @@ variable backend_instance_count {
   default     = 2
 }
 
-variable vpc_cidr_block {
-  type        = string
-  description = "vpc cidr_block"
-  default     = "10.0.0.0/16"
+variable vpc_id {
+  type = string
+  description = "vpc id"
 }
 
-variable environment_name {
-  type        = string
-  description = "the name of an environment"
-  default     = "acme"
+variable "public_subnet_id" {
+    type = string
+    description = "public subnet id"
 }
 
+variable "private_subnet_id" {
+    type = string
+    description = "private subnet id"
+}
